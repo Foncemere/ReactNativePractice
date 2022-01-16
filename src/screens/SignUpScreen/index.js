@@ -9,10 +9,18 @@ export default class SignUpScreen extends React.PureComponent {
     return (
       <View style={Styles.signUp}>
         <Image source={Logo} />
+        <View style={Styles.headerContainer}>
+          <Text style={Styles.header}>hello</Text>
+        </View>
         <SignUpInput
           title={'Email'}
           required={true}
           placeholder={'Email or Phone number'}
+        />
+        <SignUpInput
+          title={'Password'}
+          required={true}
+          placeholder={'password'}
         />
       </View>
     );

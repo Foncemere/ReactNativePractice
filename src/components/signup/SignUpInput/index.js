@@ -13,10 +13,10 @@ export default class SignUpInput extends React.PureComponent {
   render() {
     return (
       <View style={Styles.inputContainer}>
-        <Text>
-          {this.props.title}
-          {this.props.required ? '*' : ''}
-        </Text>
+        <View style={Styles.title}>
+          <Text style={Styles.titleText}>{this.props.title}</Text>
+          <Text style={Styles.required}>{this.props.required ? '*' : ''}</Text>
+        </View>
         <TextInput
           style={Styles.textInput}
           placeholder={this.props.placeholder}

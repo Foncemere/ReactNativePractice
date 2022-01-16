@@ -5,6 +5,13 @@ const Styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
   },
+  header: {
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
+  headerContainer: {
+    padding: 10,
+  },
 });
 
 export default Styles;

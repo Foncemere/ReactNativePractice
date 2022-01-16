@@ -2,15 +2,29 @@ import {StyleSheet} from 'react-native';
 
 const Styles = StyleSheet.create({
   inputContainer: {
+    marginVertical: 10,
     width: 300,
-    backgroundColor: '#efe3e3',
   },
   textInput: {
     flex: 1,
-    backgroundColor: '#d98686',
     borderWidth: 1,
     borderStyle: 'solid',
-    borderColor: '#000000',
+    borderColor: '#656F7C',
+    borderRadius: 50,
+    padding: 10,
+    paddingHorizontal: 20,
+  },
+  title: {
+    padding: 10,
+    paddingHorizontal: 20,
+    flexDirection: 'row',
+  },
+  required: {
+    color: '#E24848',
+  },
+  titleText: {
+    color: '#5D6876',
+    fontWeight: 'bold',
   },
 });
 
