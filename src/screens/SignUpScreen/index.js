@@ -3,6 +3,7 @@ import {FlatList, Image, Text, View} from 'react-native';
 import Styles from './style';
 import Logo from '../../assets/images/Logo.png';
 import SignUpInput from '../../components/signup/SignUpInput';
+import SignUpCheckBox from '../../components/signup/SignUpCheckBox';
 
 export default class SignUpScreen extends React.PureComponent {
   render() {
@@ -22,6 +23,7 @@ export default class SignUpScreen extends React.PureComponent {
           required={true}
           placeholder={'Password'}
         />
+        <SignUpCheckBox title={'hi'} />
       </View>
     );
   }
