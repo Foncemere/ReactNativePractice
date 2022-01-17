@@ -2,14 +2,13 @@ import {StyleSheet} from 'react-native';
 
 const Styles = StyleSheet.create({
   inputContainer: {
+    minWidth: 350,
     marginVertical: 10,
-    width: 300,
   },
   textInput: {
-    flex: 1,
     borderWidth: 1,
     borderStyle: 'solid',
-    borderColor: '#656F7C',
+    borderColor: '#a3a6a9',
     borderRadius: 50,
     padding: 10,
     paddingHorizontal: 20,

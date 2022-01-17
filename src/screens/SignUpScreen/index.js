@@ -10,7 +10,7 @@ export default class SignUpScreen extends React.PureComponent {
       <View style={Styles.signUp}>
         <Image source={Logo} />
         <View style={Styles.headerContainer}>
-          <Text style={Styles.header}>hello</Text>
+          <Text style={Styles.header}>Sign in to your account</Text>
         </View>
         <SignUpInput
           title={'Email'}
@@ -20,7 +20,7 @@ export default class SignUpScreen extends React.PureComponent {
         <SignUpInput
           title={'Password'}
           required={true}
-          placeholder={'password'}
+          placeholder={'Password'}
         />
       </View>
     );

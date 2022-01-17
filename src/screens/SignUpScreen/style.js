@@ -6,11 +6,12 @@ const Styles = StyleSheet.create({
     alignItems: 'center',
   },
   header: {
-    fontSize: 16,
+    fontSize: 20,
     fontWeight: 'bold',
+    color: '#000',
   },
   headerContainer: {
-    padding: 10,
+    padding: 5,
   },
 });
 
