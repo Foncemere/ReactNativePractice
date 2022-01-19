@@ -5,7 +5,8 @@ const Styles = StyleSheet.create({
     height: 20,
     aspectRatio: 1,
     borderWidth: 1,
-    borderColor: '#000',
+    borderRadius: 3,
+    borderColor: '#F55772',
   },
   get selectedBackground() {
     return {

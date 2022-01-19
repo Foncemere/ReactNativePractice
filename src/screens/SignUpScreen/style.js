@@ -13,6 +13,9 @@ const Styles = StyleSheet.create({
   headerContainer: {
     padding: 5,
   },
+  loginFromApp: {
+    flexDirection: 'row',
+  },
 });
 
 export default Styles;

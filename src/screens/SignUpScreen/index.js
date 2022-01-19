@@ -1,9 +1,10 @@
 import React from 'react';
-import {FlatList, Image, Text, View} from 'react-native';
+import {FlatList, Image, Text, TouchableOpacity, View} from 'react-native';
 import Styles from './style';
 import Logo from '../../assets/images/Logo.png';
 import SignUpInput from '../../components/signup/SignUpInput';
 import SignUpCheckBox from '../../components/signup/SignUpCheckBox';
+import LoginWithButton from '../../components/signup/loginWithButton';
 
 export default class SignUpScreen extends React.PureComponent {
   render() {
@@ -23,7 +24,15 @@ export default class SignUpScreen extends React.PureComponent {
           required={true}
           placeholder={'Password'}
         />
-        <SignUpCheckBox title={'hi'} />
+        <SignUpCheckBox title={'Remember me'} />
+        <TouchableOpacity>
+          <Text>Forgot the password?</Text>
+        </TouchableOpacity>
+        <Text>or continue with</Text>
+        <View style={Styles.loginFromApp}>
+          <LoginWithButton company={'Facebook'} />
+          <LoginWithButton company={'Google'} />
+        </View>
       </View>
     );
   }

@@ -1,7 +1,7 @@
 import React from 'react';
 import {Text, View} from 'react-native';
 import {Checkbox} from '../Checkbox';
-import Styles from './style';
+import Styles from './styles';
 
 export default class SignUpCheckBox extends React.PureComponent {
   state = {
@@ -18,7 +18,7 @@ export default class SignUpCheckBox extends React.PureComponent {
     return (
       <View style={Styles.main}>
         <Checkbox onPress={this.onPress} checked={this.state.checked} />
-        <Text>{this.props.title}</Text>
+        <Text style={Styles.text}>{this.props.title}</Text>
       </View>
     );
   }
