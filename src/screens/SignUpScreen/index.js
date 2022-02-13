@@ -4,7 +4,9 @@ import Styles from './style';
 import Logo from '../../assets/images/Logo.png';
 import SignUpInput from '../../components/signup/SignUpInput';
 import SignUpCheckBox from '../../components/signup/SignUpCheckBox';
-import LoginWithButton from '../../components/signup/loginWithButton';
+import ButtonWithIcon from '../../components/signup/ButtonWithIcon';
+import PrimaryButton from '../../components/signup/PrimaryButton';
+import ButtonText from '../../components/buttons/Button_TextOnly';
 
 export default class SignUpScreen extends React.PureComponent {
   render() {
@@ -25,13 +27,12 @@ export default class SignUpScreen extends React.PureComponent {
           placeholder={'Password'}
         />
         <SignUpCheckBox title={'Remember me'} />
-        <TouchableOpacity>
-          <Text>Forgot the password?</Text>
-        </TouchableOpacity>
+        <PrimaryButton title={'Sign In'} />
+        <ButtonText title={'Forgot the password?'} />
         <Text>or continue with</Text>
         <View style={Styles.loginFromApp}>
-          <LoginWithButton company={'Facebook'} />
-          <LoginWithButton company={'Google'} />
+          <ButtonWithIcon company={'Facebook'} />
+          <ButtonWithIcon company={'Google'} />
         </View>
       </View>
     );
